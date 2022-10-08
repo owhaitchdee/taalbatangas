@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Taal Heritage Town</title>
+	<meta charset="UTF-8">
+    <style>
+        #nav-menu {
+            margin:auto;      
+            width:40%;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        #footer {
+            margin:auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        a {
+            text-decoration: none;
+        }
+        h3 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size:16px;
+            color: rgb(0, 0, 100)
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            text-align: justify;
+            line-height: 2;
+        }
+        #form { 
+            height: 30px;
+            white-space: nowrap;
+            font-size:14px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        input {
+            color: rgb(0, 0, 100)
+        }
+        body {
+            background-image: url("images/Taal-color.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+            scroll-behavior: smooth;
+            }
+        .btn,
+        .btn:active,
+        .btn:visited {
+            border-radius: 5px;
+            background-color: #fff;
+            color:#110d29;
+            border-color: #110d29;
+            height: 30px;
+            width: 150px;
+            font-size: 13px;
+            font-weight: 500 !important;
+        }
+        .btn:hover {
+        background-color: #413684;
+        color:#fff;
+        border-color: #110d29;
+        height: 30px;
+        font-weight: 800;
+        font-size: 13px !important;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        }
+        .btn-block,
+        .btn-block:active,
+        .btn-block:visited {
+            border-radius: 5px;
+            background-color: #413684;
+            color:#FFF;
+            border-color: #413684;
+            height: 30px;
+            width: 150px;
+            font-size: 13px;
+            font-weight: 500 !important;
+        }
+        .btn-block:hover {
+        background-color: #110d29;
+        border-color: #413684;
+        height: 30px;
+        font-weight: 800;
+        font-size: 13px !important;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        }
+        .btn-selected,
+        .btn-selected:active,
+        .btn-selected:visited {
+            border-radius: 5px;
+            background-color: #fff;
+            color:gray;
+            border-color: gray;
+            height: 30px;
+            width: 150px;
+            font-size: 13px;
+            font-weight: 500 !important;
+        }
+        .btn-selected:hover {
+        background-color: #fff;
+        border-color:gray;
+        height: 30px;
+        font-weight: 800;
+        font-size: 13px !important;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="height:70px; vertical-align:middle;padding-top:10px;padding-left:40px">
+        <img src="images/taal.png" style="border-radius:50%;width:50px;vertical-align:bottom;">
+        <span style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 30px;color: rgb(0, 0, 100);margin-left: 10px;">Taal Heritage Town</span></img>
+        <span style="padding:15%"></span>
+        <a href="index.html" style="margin-right:20px"> <button class="btn" type="button">HOME</button></a>
+        <a href="churches.html" style="margin-right:20px"> <button class="btn" type="button">PLACES TO VISIT</button></a>
+        <a href="tour.html" style="margin-right:20px"> <button class="btn" type="button">HERITAGE TOUR</button></a>
+        <a href="form.html" style="margin-right:20px"> <button class="btn-selected" type="button">BOOK NOW</button></a>
+    </div>
+
+<div style="background-position-y: center; background-image: url('images/image5.jpg');background-size:cover;background-repeat:no-repeat;padding-top:40px;padding-bottom:40px;">
+    <div style="margin-left:52%;width:600px;background-color:#fff;opacity:92%">
+        <form>    
+            <table style="border:solid;display: block;padding:0px 10px 5px 20px;margin:0px">
+                <colgroup>
+                    <col span="1" style="width: 35%;">
+                    <col span="1" style="width: 65%;">
+                 </colgroup>
+                    <tr>
+                    <th colspan="2"><h3 style="font-size:x-large">BOOKING FORM</h3></th>    
+                </tr>   
+                <tr id="form">
+                    <td style="text-align:right;padding-right:20px">
+                        First Name
+                    </td>
+                    <td>
+                        <input type="text" name="firstname" aria-label="firstname" required>
+                    </td>
+                </tr>
+                <tr id="form">
+                    <td style="text-align:right;padding-right:20px">
+                        Last Name
+                    </td>
+                    <td>
+                        <input type="text" name="lastname" aria-label="lastname" required>
+                    </td>
+                </tr>
+                <tr id="form">
+                    <td style="text-align:right;padding-right:20px">
+                        Mobile No.
+                    </td>
+                    <td>
+                        <input type="tel" name="mobileno"  required>
+                    </td>
+                </tr>
+                <tr id="form">
+                    <td style="text-align:right;padding-right:20px">
+                        Email Address
+                    </td>
+                    <td>
+                        <input type="email" name="email"  required>
+                    </td>
+                </tr>
+                <tr id="form">
+                    <td style="text-align:right;padding-right:20px">
+                        Date of Visit
+                    </td>
+                    <td>
+                        <input type="date" required>
+                    </td>
+                </tr>
+                <tr id="form">
+                    <td style="text-align:right;padding-right:20px">
+                        Number of Guests
+                    </td>
+                    <td>
+                        <input type="number" min="1" name="age" style="width:50px">
+                    </td>
+                </tr>
+                <tr id="form">
+                    <td style="text-align:right;padding-right:20px">
+                        How did you know about Taal?
+                    </td>
+                    <td>
+                        <input type="text" name="middlename" aria-label="middlename" required>
+                    </td>
+                </tr>
+                <tr id="form">
+                    <td style="text-align:right;padding-right:20px">
+                        Been to Taal?
+                    </td>
+                    <td>
+                        <div>
+                            <input type="radio"  id="gender" value="option1">
+                            <label >Yes</label>
+                        <span></span>
+                            <input type="radio"  id="gender" value="option2">
+                            <label >No</label>            
+                        </div>
+                    </td>
+                </tr>
+                <tr id="form">
+                    <td style="vertical-align:top;text-align:right;padding-right:20px">
+                        Point of Interest
+                    </td>
+                    <td>
+                        <div>
+                            <input type="checkbox" id="devices" value="option1">
+                            <label>Churches</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="devices" value="option2">
+                            <label>Ancestral Homes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="devices" value="option3">
+                            <label>Local Food</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="devices" value="option4">
+                            <label>Events</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="form">
+                    <td style="vertical-align:top;text-align:right;padding-right:20px">
+                        Write a short message:
+                    </td>
+                    <td>
+                        <textarea rows="4" cols="40" required></textarea>
+                    </td>
+                </tr>
+                <tr id="form">
+                    <th colspan="2">
+                        <input type="submit" style="background-color: rgb(0, 0, 100);color:#fff"/>
+                        <input type="button" value="Clear"/>            
+                    </th>    
+                </tr>
+            </table>
+        </form>
+</div>
+</div>
+<hr style="color:rgb(126, 126, 169)">
+<div id="footer" >
+    <center>
+    <img src="images/fb.png" style="margin-right:10px;height:20px;vertical-align:bottom"> 
+        <a href="" style="margin-right:20px">Like us in Facebook</a>
+        <span style="margin-right:20px">|</span>
+    <img src="images/twitter.png" style="margin-right:10px;height:20px;vertical-align:bottom">
+        <a href="" style="margin-right:20px"> Follow us on Twitter</a>
+        <span style="margin-right:20px">|</span>
+    <img src="images/contact.webp" style="margin-right:10px;height:20px;vertical-align:bottom">
+        <a href="">Contact Us</a>
+    </center>
+</div>
+</body>
+</html>
